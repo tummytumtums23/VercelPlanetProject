@@ -1,9 +1,19 @@
-<!-- <app-mercury></app-mercury>  --> 
-<!-- <app-venus></app-venus> -->
-<app-earth></app-earth>
-<!--  <app-mars></app-mars>  -->
-<!-- <app-jupiter></app-jupiter> -->
-<!-- <app-saturn></app-saturn> -->
-<!-- <app-neptune></app-neptune> -->
+<div style="text-align:center">
+<button type="button" (click)="mercuryClicked()" class="btn" [ngClass]="mercuryFlag ? 'btn-mercury':'btn-mercury btn-arrow-left' ">Mercury</button>
+<button type="button" (click)="venusClicked()" class="btn btn-venus btn-arrow-left">Venus</button>
+<button type="button" (click)="earthClicked()" class="btn" [ngClass]="earthFlag ?'btn-earth' : ' btn-earth btn-arrow-right btn-arrow-left' " >Earth</button>
+<button type="button" (click)="marsClicked()" class="btn btn-mars btn-arrow-right">Mars</button>
+<button type="button" (click)="jupiterClicked() "class="btn btn-jupiter btn-arrow-right">Jupiter</button>
+<button type="button" (click)="saturnClicked()" class="btn btn-saturn btn-arrow-right">Saturn</button>
+<button type="button" (click)="uranusClicked()" class="btn btn-uranus btn-arrow-right">Uranus</button>
+<button type="button" (click)="neptuneClicked()" class="btn btn-neptune btn-arrow-right">Neptune</button>
+</div>
+<app-mercury [ngStyle]="{'display': mercuryFlag ? 'block' : 'none' }"></app-mercury> 
+<app-venus [ngStyle]="{'display': venusFlag ? 'block' : 'none' }"></app-venus> 
+<app-earth [ngStyle]="{'display': earthFlag ? 'block' : 'none' }"></app-earth>
+ <app-mars [ngStyle]="{'display': marsFlag ? 'block' : 'none' }"></app-mars>  
+<app-jupiter [ngStyle]="{'display': jupiterFlag ? 'block' : 'none' }"></app-jupiter>
+<!-- <app-saturn [ngStyle]="{'display': saturnFlag ? 'block' : 'none' }"></app-saturn> -->
+<app-neptune [ngStyle]="{'display': neptuneFlag ? 'block' : 'none' }"></app-neptune>
 <app-ui></app-ui>
 	
