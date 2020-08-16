@@ -80,7 +80,7 @@ export class AppComponent {
   }
      public saturnClicked(): void {
     this.mercuryFlag = false;
-    this.venusFlag = true;
+    this.venusFlag = false;
   this.earthFlag = false;
   this.marsFlag = false;
   this.jupiterFlag = false;

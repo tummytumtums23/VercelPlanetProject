@@ -65,8 +65,8 @@ export class SaturnService implements OnDestroy {
      this.scene.add(this.sphere);
      this.rings = this.createRings(radius, segments, angle);
      this.rings.rotation.z = rotation;
-     this.rings.rotateY(THREE.MathUtils.degToRad(89));
-     this.rings.rotateZ(THREE.MathUtils.degToRad(35));
+     this.rings.rotateY(THREE.MathUtils.degToRad(10));
+     //this.rings.rotateZ(THREE.MathUtils.degToRad(35));
      this.scene.add(this.rings);
      this.clouds = this.createClouds(radius, segments);
      this.clouds.rotation.y = rotation;

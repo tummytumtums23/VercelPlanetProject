@@ -63,45 +63,93 @@ body { /* just for this demo. */
 }
 .btn-arrow-right:before,
 .btn-arrow-left:after { /* hide arrow tails background */
-    background-color: gray;
+    background-color: #1872a8;
 }
 .btn-mercury{
-    color: white;
-  background-color: gray;
-  border-color: #dc3545;
+         color: white;
+  background-color: #585858;
+  border-color: #b30000;
 }
 .btn-venus{
-        color: white;
-  background-color: gray;
-  border-color: #dc3545;
+    color: white;
+    background-color: #c7b087;
+    border-color:  #b30000;
 }
 .btn-earth{
-        color: white;
-  background-color: gray;
-  border-color: #dc3545;
+    color: white;
+    background-color: #1872a8;
+    border-color:  #b30000;
 }
 .btn-mars{
-        color: white;
-  background-color: gray;
-  border-color: #dc3545;
+    color: white;
+    background-color: #9a604a;
+    border-color:  #b30000;
 }
 .btn-jupiter{
-        color: white;
-  background-color: gray;
-  border-color: #dc3545;
+    color: white;
+    background-color: #a19283 ;
+    border-color:  #b30000;
 }
 .btn-saturn{
-        color: white;
-  background-color: gray;
-  border-color: #dc3545;
+    color: white;
+    background-color: #c7ad5f;
+    border-color:  #b30000;
 }
 .btn-uranus{
-        color: white;
-  background-color: gray;
-  border-color: #dc3545;
+    color: white;
+    background-color: #c7ad5f;
+    border-color:  #b30000;
 }
 .btn-neptune{
-        color: white;
-  background-color: gray;
-  border-color: #dc3545;
+    color: white;
+    background-color: #3f5bbd;
+    border-color:  #b30000;
+}
+.btn-mercury-after{
+  font-weight: 900;
+         color: white;
+  background-color: #585858;
+  border-color: #797575;
+}
+.btn-venus-after{
+  font-weight: 900;
+    color: white;
+    background-color: #c7b087;
+    border-color: #d49f00;
+}
+.btn-earth-after{
+  font-weight: 900;
+    color: white;
+    background-color: #1872a8;
+    border-color: #d49f00;
+}
+.btn-mars-after{
+  font-weight: 900;
+    color: white;
+    background-color: #9a604a;
+    border-color: #d49f00;
+}
+.btn-jupiter-after{
+  font-weight: 900;
+    color: white;
+    background-color: #a19283 ;
+    border-color: #d49f00;
+}
+.btn-saturn-after{
+    color: white;
+    font-weight: 900;
+    background-color: #c7ad5f;
+    border-color: #d49f00;
+}
+.btn-uranus-after{
+  font-weight: 900;
+    color: white;
+    background-color: #c7ad5f;
+    border-color: #d49f00;
+}
+.btn-neptune-after{
+  font-weight: 900;
+    color: white;
+    background-color: #3f5bbd;
+    border-color: #d49f00;
 }
