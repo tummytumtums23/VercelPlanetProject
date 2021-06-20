@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+import { HttpModule, JsonpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { EarthComponent } from './earth/earth.component';
@@ -13,6 +15,16 @@ import { SaturnComponent } from './saturn/saturn.component';
 import { MercuryComponent } from './mercury/mercury.component';
 import { VenusComponent } from './venus/venus.component';
 import { NeptuneComponent } from './neptune/neptune.component';
+import { UranusComponent } from './uranus/uranus.component';
+import { PanelpageComponent } from './panelpage/panelpage.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AdminnewscontrolComponent } from './adminnewscontrol/adminnewscontrol.component'
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+//import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { Router } from '@angular/router'
+import { PopupmodelModule } from './popupmodel/popupmodel.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -28,10 +40,22 @@ import { NeptuneComponent } from './neptune/neptune.component';
     SaturnComponent,
     MercuryComponent,
     VenusComponent,
-    NeptuneComponent
+    NeptuneComponent,
+    UranusComponent,
+    PanelpageComponent,
+    AdminnewscontrolComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule,
+    JsonpModule,
+    HttpClientModule,
+    FontAwesomeModule,
+    FormsModule,
+    PopupmodelModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    //MatCarouselModule.forRoot()
   ],
   providers: [
   ],

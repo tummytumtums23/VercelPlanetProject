@@ -1,0 +1,45 @@
+<!-- <body class="bimage"> -->
+	
+<!-- <div class="row" style="display: inline-flex;"> -->
+	
+ 	<!-- <p *ngFor="let planetNews of planetNewsArray">
+ 	{{planetNews.url}} </p> -->
+ 	<!--  <div ng-repeat="data in planetNewsArray" ng-class="{'red' : areaStatus, 'green' : !areaStatus}"> -->
+ 	 	<!-- <div class="col-2" > -->
+          <!--   {{data.url}} -->
+     <!--    </div> -->
+     <div *ngIf = "appear">
+     <input type = "text"  (keyup.enter) = "wordsubmit()" name="values" [(ngModel)]="keywords">
+</div>
+     <div *ngFor="let planetNews of largeArray">
+          <div *ngFor="let world of planetNews; let i = index" >
+     <div class = "row">
+<div class = "col-6 border">
+     <div (click) = "keyworddetermine()">
+     <fa-icon  class="iconstyle" [icon]="crossbutton"></fa-icon>
+</div>
+<!--      {{planetNews}} -->
+     {{ world.title}} <br><br>   <label>{{ world.provider}}</label> 
+</div>
+     
+ </div>
+</div>
+</div>
+
+
+  
+
+<!-- <div class="col-10">
+	bcd
+</div> 	
+
+</div> -->
+<br>
+<div class="row" style="display: inline-flex;">
+<div class="col-6">
+</div>
+<div class="col-6">
+	
+</div>
+</div>
+

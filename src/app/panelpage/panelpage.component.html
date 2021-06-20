@@ -1,0 +1,91 @@
+
+	            
+     <body class="bimage">
+<!-- <mat-carousel
+  timings="200ms ease-in"
+  [autoplay]="true"
+      [ngClass] = "abc"
+  interval="6000"
+  color="white"
+  position = "relative"
+>
+  <mat-carousel-slide
+
+    *ngFor="let slide of slides; let i = index"
+
+    [image]="slide.image"
+    overlayColor="#ffffff"
+    position = "relative"
+    [hideOverlay]="false"
+  ></mat-carousel-slide>
+</mat-carousel> -->
+<!-- <div class="container">
+   <carousel [slides]="slides"></carousel>
+</div>
+<div class="carousel">
+  <ng-container *ngFor="let slide of slides; let i = index">
+    <img
+      [src]="slide.src"
+      class="slide"
+    />
+  </ng-container>
+
+  controls -->
+  <!-- <button class="control prev">
+    <span class="arrow left"></span>
+  </button>
+  <button class="control next">
+    <span class="arrow right"></span>
+  </button>
+</div> -->
+	
+
+	
+ 	<!-- <p *ngFor="let planetNews of planetNewsArray">
+ 	{{planetNews.url}} </p>
+ 	 <div ng-repeat="data in planetNewsArray" ng-class="{'red' : areaStatus, 'green' : !areaStatus}">
+ 	 	<div class="col-2" >
+            {{data.url}}
+        </div> -->
+    <div  class="row" *ngFor="let planetNews of shortarray"> 
+     
+    <button (click)="openModal('custom-modal-1')" class="col-sm-5 border" *ngFor="let a of planetNews">
+      
+        {{a.title}} 
+          &nbsp;
+          
+      
+
+     
+ <app-popupmodel id="custom-modal-1">
+    <h1>{{a.title}}</h1>
+    <p >Do you wish to proceed to {{a.provider}}?</p>
+    <div>
+    <a href={{a.url}}><button click="link()" >Yes I do</button></a>
+    <button (click)="closeModal('custom-modal-1');">No thanks</button>
+  </div>
+
+</app-popupmodel>
+
+      </button>
+          
+     </div>
+
+  
+
+<!-- <div class="col-10">
+	bcd
+</div> 	
+
+</div>
+<br>
+<div class="row" style="display: inline-flex;">
+<div class="col-6">
+</div>
+<div class="col-6">
+	
+</div>
+</div> -->
+
+</body>
+

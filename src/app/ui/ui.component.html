@@ -1,6 +1,24 @@
-<div class="ui-wrapper">
- <!--  <app-ui-infobar-top></app-ui-infobar-top>
+<!-- <div class="ui-wrapper">
+  <app-ui-infobar-top></app-ui-infobar-top>
   <app-ui-sidebar-left></app-ui-sidebar-left>
   <app-ui-sidebar-right></app-ui-sidebar-right>
-  <app-ui-infobar-bottom></app-ui-infobar-bottom> -->
+  <app-ui-infobar-bottom></app-ui-infobar-bottom>
+</div> -->
+<div style="text-align:center">
+<button type="button" (click)="mercuryClicked()" class="btn btn-arrow-left" [ngClass]="mercuryFlag ? 'btn-mercury-after':'btn-mercury' ">Mercury</button>
+<button type="button" (click)="venusClicked()" class="btn btn-venus btn-arrow-left">Venus</button>
+<button type="button" (click)="earthClicked()" class="btn" [ngClass]="earthFlag ?'btn-earth' : ' btn-earth' " >Earth</button>
+<button type="button" (click)="marsClicked()" class="btn btn-mars btn-arrow-right">Mars</button>
+<button type="button" (click)="jupiterClicked() "class="btn btn-jupiter btn-arrow-right">Jupiter</button>
+<button type="button" (click)="saturnClicked()" class="btn btn-saturn btn-arrow-right">Saturn</button>
+<button type="button" (click)="uranusClicked()" class="btn btn-uranus btn-arrow-right">Uranus</button>
+<button type="button" (click)="neptuneClicked()" class="btn btn-neptune btn-arrow-right">Neptune</button>
 </div>
+<app-mercury (click)="planetname($event)" [ngStyle]="{'display': mercuryFlag ? 'block' : 'none' }"></app-mercury> 
+<app-venus (click)="planetname($event)" [ngStyle]="{'display': venusFlag ? 'block' : 'none' }"></app-venus> 
+<app-earth (click)="planetname($event)" [ngStyle]="{'display': earthFlag ? 'block' : 'none' }" ></app-earth>
+ <app-mars (click)="planetname($event)" [ngStyle]="{'display': marsFlag ? 'block' : 'none' }"></app-mars>  
+<app-jupiter (click)="planetname($event)" [ngStyle]="{'display': jupiterFlag ? 'block' : 'none' }"></app-jupiter>
+<app-saturn (click)="planetname($event)" [ngStyle]="{'display': saturnFlag ? 'block' : 'none' }"></app-saturn>
+<app-uranus (click)="planetname($event)" [ngStyle]="{'display': uranusFlag ? 'block' : 'none' }"></app-uranus>
+<app-neptune (click)="planetname($event)" [ngStyle]="{'display': neptuneFlag ? 'block' : 'none' }"></app-neptune>

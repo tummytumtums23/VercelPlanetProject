@@ -1,0 +1,39 @@
+
+.bimage{
+	background-image: url('/../../assets/mercurybackground.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	
+}
+body{
+	height: auto;
+  min-height: 100%;
+	width: auto;
+  min-width: 100%;
+
+
+}
+
+.border{
+
+  text-align: center;
+    margin-left: 5px;
+  padding: 5%;
+  font-size: 21px;
+  font-weight: bold;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+border: 3px solid rgba(54, 234, 231, 1.0);
+    background-color: rgba(54, 234, 231, 0.8);
+margin-right: 1%;
+margin-left: 5%   ;
+margin-bottom: 1%;
+margin-top: 1% ;
+
+}
+
+hr{
+  position: relative;
+}

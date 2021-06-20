@@ -7,7 +7,7 @@ import { EarthService } from './earth.service';
   templateUrl: './earth.component.html'
 })
 export class EarthComponent implements OnInit {
-  
+  planetvalue: "planet earth";
   @ViewChild('rendererCanvas', {static: true})
   public rendererCanvas: ElementRef<HTMLCanvasElement>;
 
@@ -21,5 +21,7 @@ export class EarthComponent implements OnInit {
   /*  this.earthFlag=true;*/
   }
  
-
+get PlanetValue() {
+        return this.planetvalue;
+    }
 }
