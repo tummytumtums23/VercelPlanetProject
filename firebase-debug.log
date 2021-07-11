@@ -1,0 +1,79 @@
+[debug] [2021-06-24T01:00:03.449Z] ----------------------------------------------------------------------
+[debug] [2021-06-24T01:00:03.453Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aarohee\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2021-06-24T01:00:03.454Z] CLI Version:   9.14.0
+[debug] [2021-06-24T01:00:03.454Z] Platform:      win32
+[debug] [2021-06-24T01:00:03.454Z] Node Version:  v10.16.3
+[debug] [2021-06-24T01:00:03.455Z] Time:          Wed Jun 23 2021 18:00:03 GMT-0700 (Pacific Daylight Time)
+[debug] [2021-06-24T01:00:03.455Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-24T01:00:03.470Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-24T01:00:03.470Z] > authorizing via signed-in user (aryeman@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Aarohee\workspace\planet-animations-master
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-06-24T01:01:26.532Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"planetproject","name":"planetproject"}
+[debug] [2021-06-24T01:01:26.810Z] <<< HTTP RESPONSE 409 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Thu, 24 Jun 2021 01:01:26 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=123","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-24T01:01:26.813Z] <<< HTTP RESPONSE BODY {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2021-06-24T01:01:26.957Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at module.exports (C:\Users\Aarohee\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\Aarohee\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\Aarohee\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:198:13)
+    at Request.EventEmitter.emit (domain.js:448:20)
+    at Request.<anonymous> (C:\Users\Aarohee\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:198:13)
+    at Request.EventEmitter.emit (domain.js:448:20)
+    at IncomingMessage.<anonymous> (C:\Users\Aarohee\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:286:20)
+    at IncomingMessage.emit (events.js:203:15)
+    at IncomingMessage.EventEmitter.emit (domain.js:448:20)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID planetproject. Please try again with a unique project ID.
+[debug] [2021-06-24T01:01:48.984Z] ----------------------------------------------------------------------
+[debug] [2021-06-24T01:01:48.994Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aarohee\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2021-06-24T01:01:48.995Z] CLI Version:   9.14.0
+[debug] [2021-06-24T01:01:48.995Z] Platform:      win32
+[debug] [2021-06-24T01:01:48.996Z] Node Version:  v10.16.3
+[debug] [2021-06-24T01:01:48.997Z] Time:          Wed Jun 23 2021 18:01:48 GMT-0700 (Pacific Daylight Time)
+[debug] [2021-06-24T01:01:48.998Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-24T01:01:49.042Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-24T01:01:49.043Z] > authorizing via signed-in user (aryeman@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Aarohee\workspace\planet-animations-master
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
