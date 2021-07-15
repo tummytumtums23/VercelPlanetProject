@@ -11,7 +11,7 @@ import {map, startWith,switchMap,debounceTime } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class PlanetService {
-  baseURL='http://localhost:1337/Planet/';
+  baseURL='https://bibliotheque-chaise-09959.herokuapp.com/Planet/';
   constructor(private httpClient: HttpClient,
               private http: Http) { }
   fetchPlanetData(planetDet){
