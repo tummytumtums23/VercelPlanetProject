@@ -1,6 +1,10 @@
 
-	            
-     <body class="bimage">
+	   
+     <body class="bimage" style="overflow-y: scroll">
+      <a href="/">
+      <button class="block"><b>Take me back to the planets</b></button> 
+      </a>
+      <br>
 <!-- <mat-carousel
   timings="200ms ease-in"
   [autoplay]="true"
@@ -48,16 +52,21 @@
             {{data.url}}
         </div> -->
     <div  class="row" *ngFor="let planetNews of shortarray"> 
-     
-    <button (click)="openModal('custom-modal-1')" class="col-sm-5 border" *ngFor="let a of planetNews">
-      
+    
+    <!-- <a href={{a.url}}> -->
+    <button (click)="openModal('custom-modal-1')" class="col-sm-5 border" *ngFor="let a of planetNews" >
+
+      <a href={{a.url}}>
+      <div style="color:black">
         {{a.title}} 
-          &nbsp;
-          
+      </div>
+             
+      </a>  
+    &nbsp; 
       
 
      
- <app-popupmodel id="custom-modal-1">
+<!--  <app-popupmodel id="custom-modal-1">
     <h1>{{a.title}}</h1>
     <p >Do you wish to proceed to {{a.provider}}?</p>
     <div>
@@ -65,10 +74,11 @@
     <button (click)="closeModal('custom-modal-1');">No thanks</button>
   </div>
 
-</app-popupmodel>
+</app-popupmodel> -->
 
       </button>
-          
+        <!--  </a> -->
+        
      </div>
 
   

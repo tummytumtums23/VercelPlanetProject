@@ -27,7 +27,12 @@ arrayupdated: boolean ;
  otherarray = [];
  nummberInRow: number = 2;
  shortarray;
-
+keywordsarray = ["horoscope", "Wann ist", "aquarius", "faster-than-light", 
+"horoscope", "Sternzeichen-Datum", "warp barrier", "zodiac sign", 
+"saggitarius", "capricorn", "leo", "cancer", "aries", "taurus", "gemini", "virgo", 
+"libra", "scorpio", "pisces", "apple tv +", "emmy", "nano-bots", "julia", 
+"weeks of life you have left", "ctv", "porn", "gemstones", "cop", "niebo", "mity", 
+"scenekit", "covid", "setting gold and platinum", "so ordered"]
 
   constructor(public planetService: PlanetService, private modalService: PopupmodelService, private activatedRoute : ActivatedRoute) { }
 
@@ -44,7 +49,7 @@ public fetchPlanetDetail=()=> {
   var input  = "planet " + this.planetname;
   console.log(input);
 	this.planetService.fetchPlanetData(input).subscribe(res => {
-      this.planetService.fetchPlanetKeywords().subscribe((data: any[]) => {
+    //  this.planetService.fetchPlanetKeywords().subscribe((data: any[]) => {
          // this.slides = [{'image': 'https://static.toiimg.com/photo/72975551.cms'}, {'image': 'https://gsr.dev/material2-carousel/assets/demo.png'},{'image': 'https://gsr.dev/material2-carousel/assets/demo.png'}, {'image': 'https://gsr.dev/material2-carousel/assets/demo.png'}, {'image': 'https://gsr.dev/material2-carousel/assets/demo.png'}]
     /*this.wordcheckerdadder();*/
     
@@ -58,12 +63,22 @@ public fetchPlanetDetail=()=> {
              
              /*console.log("after entering");
              console.log(i);*/
-             for(var x = 1; x<data.length; x++ ){
+            // for(var x = 1; x<data.length; x++ ){
              /*  console.info(data[x].keywords);*/
              
              /*  console.log("does " + res['articles'][i].title.toLowerCase() + " include " + data[x].keywords);
                console.log(res['articles'][i].title.toLowerCase().includes(data[x].keywords.toString()))*/
-      if(res['articles'][i].title.toLowerCase().includes(data[x].keywords.toLowerCase().toString())) {
+      // if(res['articles'][i].title.toLowerCase().includes(data[x].keywords.toLowerCase().toString())) {
+        
+      //   res['articles'].splice(i,1);
+      
+      //   /*console.log(i);*/
+      //   this.arrayupdated = true;
+      //   break;
+
+      // }
+      for(var x =0; x<this.keywordsarray.length; x++)
+      if(res['articles'][i].title.toLowerCase().includes(this.keywordsarray[x])) {
         
         res['articles'].splice(i,1);
       
@@ -73,7 +88,7 @@ public fetchPlanetDetail=()=> {
 
       }
      /* console.log(res['articles']);*/
-    }
+   // }
      if(this.arrayupdated == false) {
         i++;      
          
@@ -164,7 +179,7 @@ function message(){
  }
 
 
-   })
+   //})
     })
 
 

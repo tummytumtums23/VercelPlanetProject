@@ -1,0 +1,13 @@
+.backgroundimage{
+	margin-left: 100px;
+	background-image: url("../../assets/images/asteroid1.jpg");
+	z-index: 4;
+}
+
+
+
+.top-left {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
