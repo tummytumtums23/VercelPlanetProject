@@ -32,7 +32,7 @@ keywordsarray = ["horoscope", "Wann ist", "aquarius", "faster-than-light",
 "saggitarius", "capricorn", "leo", "cancer", "aries", "taurus", "gemini", "virgo", 
 "libra", "scorpio", "pisces", "apple tv +", "emmy", "nano-bots", "julia", 
 "weeks of life you have left", "ctv", "porn", "gemstones", "cop", "niebo", "mity", 
-"scenekit", "covid", "setting gold and platinum", "so ordered"]
+"scenekit", "covid", "setting gold and platinum", "so ordered", "gemstone", "coral"]
 
   constructor(public planetService: PlanetService, private modalService: PopupmodelService, private activatedRoute : ActivatedRoute) { }
 
